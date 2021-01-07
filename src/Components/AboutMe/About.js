@@ -94,7 +94,7 @@ const About = () => {
 
                     <div className={classes.aboutMe}>
                         <img src={profileImage} alt={'Kene Okoye'} className={classes.image}/>
-                        <a href='https://kene-okoye-resume.netlify.app/' className={classes.buttonAnchor}>    
+                        <a href='https://kene-okoye-resume.netlify.app/' target="_blank" className={classes.buttonAnchor}>    
                             <Button 
                             disableRipple='true' variant="contained" className={classes.downloadButton}>
                             {t('about:resume')}<VisibilityIcon fontSize='medium' style={{paddingLeft: '10px'}} />
