@@ -8,6 +8,10 @@ const useStyles = makeStyles((theme) => ({
     
     iconButton: {
         fontSize: 'inherit',
+        padding: theme.spacing(2),
+        [theme.breakpoints.down('xs')]: {
+            padding: '2px'
+        }
     },
 
     languageIcon: {

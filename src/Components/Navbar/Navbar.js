@@ -46,12 +46,14 @@ const Navbar = () => {
             <AppBar position="fixed">
                 <Toolbar className={classes.toolBarOptions}>
                     <img src={myLogo} alt='my logo' className={classes.myLogo}/>
-                    <div className={classes.navList}>{ isMobile ? (
+                    <div className={classes.navList}>
+                        <LanguageMenu/>
+                        
+                        { isMobile ? (
                             <MobileMenu/>
                         ) : ( 
                             <DesktopMenu/>
                         )}
-                            <LanguageMenu/>
                     </div>
                     
                 </Toolbar>
