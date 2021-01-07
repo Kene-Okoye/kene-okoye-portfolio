@@ -106,11 +106,11 @@ const Contact = () => {
     const { register, handleSubmit, errors } = useForm();  // <--- deconstruction of the necessary props ---> //
 
     const onSubmit = (data, reset) => {
-        alert(`Thank you for your message from ${data.email}`);
+        alert(`Thank you for your message ${data.name}. I'll get back to you as soon as possible. Best wishes and keep smiling, Kene 😊✨`);
         const templateId = process.env.REACT_APP_TEMPLATE_ID;
         const serviceID = process.env.REACT_APP_SERVICE_ID;
-        console.log({ from_name: data.name, message: data.comment, reply_to: data.email })
-        sendFeedback(serviceID, templateId, { from_name: data.name, message: data.comment, reply_to: data.email })
+        console.log({ full_data: data, from_name: data.name, message: data.message, reply_to: data.email })
+        sendFeedback(serviceID, templateId, { from_name: data.name, message: data.message, reply_to: data.email })
         reset.target.reset();
     }
 
