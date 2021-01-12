@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8" />
@@ -7,6 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
+
+  <!-- Make website visible and sharable with an image preview on LinkedIn 'Featured' section -->
+  <meta property='og:title' content='My personal portfolio' />
+  <meta property='og:image' content='%PUBLIC_URL%/portfolio_homepage.png' />
+  <meta property='og:description'
+    content="My personal website displaying all projects I've worked on and currently working on." />
+  <meta property='og:url' content="https://kene-okoye-portfolio.netlify.app/" />
+  <meta name="author" content="Kene Okoye" />
+
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <!--
       manifest.json provides metadata used when your web app is installed on a
