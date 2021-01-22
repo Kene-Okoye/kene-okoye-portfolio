@@ -77,7 +77,7 @@ const TechStack = ({match}) => {
             category: 'about:tech-frontend',
             icon: 'fas fa-desktop',
             languages_practices: 'about:tech-languages',
-            language_PracticeList: 'HTML, CSS, JavaScript, ReactJS',
+            language_PracticeList: 'HTML, CSS, Sass, JavaScript, ReactJS',
             tools: 'about:tech-tools',
             tooList: 'GitHUB, Material UI, Particles.js, Bootstrap, React Spring, Figma, Netlify'
         },
